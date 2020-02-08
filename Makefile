@@ -34,7 +34,7 @@ cmd/core-metadata/core-metadata:
 	$(GO) build $(GOFLAGS) -o $@ ./cmd/core-metadata
 
 cmd/core-data/core-data:
-    $(GOCGO) build $(GOFLAGS) -o $@ ./cmd/core-data
+	$(GOCGO) build $(GOFLAGS) -o $@ ./cmd/core-data
 
 cmd/core-command/core-command:
 	$(GO) build $(GOFLAGS) -o $@ ./cmd/core-command
