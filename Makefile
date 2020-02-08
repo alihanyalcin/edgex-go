@@ -36,7 +36,7 @@ cmd/core-metadata/core-metadata:
 cmd/core-data/core-data:
     CGO_ENABLED=1
     export CGO_ENABLED
-	$(GOCGO) build $(GOFLAGS) -o $@ ./cmd/core-data
+    $(GOCGO) build $(GOFLAGS) -o $@ ./cmd/core-data
 
 cmd/core-command/core-command:
 	$(GO) build $(GOFLAGS) -o $@ ./cmd/core-command
